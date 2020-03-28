@@ -8,7 +8,7 @@ ClassMethod CreateSSLConfiguration(name As %String = "default") As %Status
 
   Do ##class(Security.SSLConfigs).Get(name, .p)
 
-  If $Data(p) quit 1
+  If $Data(p) return 1
 
   Set p("CipherList")="ALL:!aNULL:!eNULL:!EXP:!SSLv2"
   Set p("CAFile")=""

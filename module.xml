@@ -7,11 +7,6 @@
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="community.utils.SSLClient.CLS"/>
-      <Invokes>
-        <Invoke Class="community.utils.SSLClient" Method="CreateSSLConfiguration">
-          <Arg>${name}</Arg>
-        </Invoke>
-      </Invokes>
     </Module>
   </Document>
 </Export>
