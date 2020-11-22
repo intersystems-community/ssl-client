@@ -3,7 +3,8 @@
   <Document name="sslclient.ZPM">
     <Module>
       <Name>sslclient</Name>
-      <Version>1.0.1</Version>
+      <Version>1.0.2</Version>
+      <Description>Adds ssl client configuration to your InterSystems IRIS server</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="community.utils.SSLClient.CLS"/>
