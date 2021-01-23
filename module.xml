@@ -3,11 +3,17 @@
   <Document name="sslclient.ZPM">
     <Module>
       <Name>sslclient</Name>
-      <Version>1.0.2</Version>
+      <Parameter Name="confname" Value="default" />
+      <Version>1.0.3</Version>
       <Description>Adds ssl client configuration to your InterSystems IRIS server</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="community.utils.SSLClient.CLS"/>
+      <Invokes>	
+        <Invoke Class="community.utils.SSLClient" Method="CreateSSLConfiguration">	
+          <Arg>${confname}</Arg>	
+        </Invoke>
+      </Invokes>
     </Module>
   </Document>
 </Export>
