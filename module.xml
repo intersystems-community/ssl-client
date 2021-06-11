@@ -4,11 +4,11 @@
     <Module>
       <Name>sslclient</Name>
       <Parameter Name="confname" Value="default" />
-      <Version>1.0.3</Version>
+      <Version>1.0.4</Version>
       <Description>Adds ssl client configuration to your InterSystems IRIS server</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-      <Resource Name="community.utils.SSLClient.CLS"/>
+      <Resource Name="community.utils.PKG"/>
       <Invokes>	
         <Invoke Class="community.utils.SSLClient" Method="CreateSSLConfiguration">	
           <Arg>${confname}</Arg>	
